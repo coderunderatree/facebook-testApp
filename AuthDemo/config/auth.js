@@ -1,7 +1,7 @@
 module.exports = {
     'facebookAuth' : {
-        'clientID'      : 215642455602852, // your App ID
-        'clientSecret'  : "285f5d07a57e2d5b94a18d16efcc11a4", // your App Secret
+        'clientID'      : process.env.FB_APP_ID, // your App ID
+        'clientSecret'  : process.env.FB_APP_SECRET, // your App Secret
         'callbackURL'   : 'https://whispering-brook-14323.herokuapp.com/auth/facebook/callback'
     }
 };
