@@ -14,8 +14,8 @@ var LocalStrategy        = require('passport-local').Strategy,
     User       			 = require('./models/user'),
     configAuth 			 = require('./config/auth');
 
-mongoose.connect("mongodb://localhost/facebook-auth"); // connect to our database
-
+// mongoose.connect("mongodb://localhost/facebook-auth"); // connect to our database
+mongoose.connect("mongodb://lohit:passwordd@ds129031.mlab.com:29031/test_app");
 // set up our express application
 app.use(bodyParser.urlencoded({extended:true})); // get information from html forms
 
